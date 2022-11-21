@@ -234,8 +234,24 @@ for (let elem of inputElements) {
 
 
 
-const form = document.querySelector("form.customer-info__container")
+const form = document.querySelector("form.customer-info__container");
+const nameInput = document.getElementById("input-name");
+const surnameInput = document.getElementById("input-surname");
+const streetInput = document.getElementById("input-street");
+const houseInput = document.getElementById("input-house");
+const blockInput = document.getElementById("input-block");
+const apprtInput = document.getElementById("input-apprt");
+const dateInput = document.getElementById("input-date");
+
 
 form.addEventListener("submit", (e) => {
     e.preventDefault()
+    console.log(nameInput.value)
+    console.log(surnameInput.value)
+    console.log(streetInput.value)
+    console.log(houseInput.value)
+    console.log(blockInput.value)
+    console.log(apprtInput.value)
+    console.log(dateInput.value)
+    alert (`Thank you for the order! It will be delivered to ${nameInput.value} ${surnameInput.value} at ${streetInput.value} ${houseInput.value} ${blockInput.value}, aprt. ${apprtInput.value} on ${dateInput.value}`)
 })
