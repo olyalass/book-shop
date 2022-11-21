@@ -50,7 +50,7 @@ function poehaliNahui(books) {
         <h2 class="cart__title">Your cart:</h2>
         <div class="cart__cards_container"></div>
         <h3 class="cart__total">Total price:</h3>
-        <button class="card__button button_confirm href="https://olyalass.github.io/book-shop/pages/order/" ">Confirm order</button>
+        <a class="card__button button_confirm" href="../order/">Confirm order</a>
     </div>
 </div>
 <div class="page__header">

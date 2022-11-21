@@ -10,7 +10,7 @@ function createUI() {
             <div class="logo__title"></div>
         </a>
         <nav class="header__nav nav">
-            <a class="nav__link" href="#">Catalog</a>
+            <a class="nav__link" href="../catalog/">Catalog</a>
             <a class="nav__link" href="#">Categories</a>
             <a class="nav__link" href="#">Special Offers</a>
             <a class="nav__link" href="#">Delivery</a>
