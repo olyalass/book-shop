@@ -49,7 +49,7 @@ function poehaliNahui(books) {
     <div class="cart__container">
         <h2 class="cart__title">Your cart:</h2>
         <div class="cart__cards_container"></div>
-        <h3 class="cart__total">Total price:</h3>
+        <h3 class="cart__total">Total price: </h3>
         <a class="card__button button_confirm" href="../order/">Confirm order</a>
     </div>
 </div>
@@ -246,6 +246,8 @@ function poehaliNahui(books) {
     container.insertAdjacentHTML("beforeend", createCartBookCard(booksMap[bookId]))
     const cartBookNode = container.firstChild;
     updateCartCount()
+    const totalPrice = cartBookIDs.reduce((price, bookId) => price + booksMap[bookId].price, 0)
+    document.querySelector(".cart__total").textContent = `Price: ${totalPrice}`
 
     cartBookNode.querySelector(".button_remove").addEventListener("click", (e) => {
       e.stopPropagation();
@@ -253,6 +255,8 @@ function poehaliNahui(books) {
       const firstBookIdIndex = cartBookIDs.indexOf(bookId);
       cartBookIDs = [...cartBookIDs.slice(0, firstBookIdIndex), ...cartBookIDs.slice(firstBookIdIndex+1)]
       updateCartCount()
+      const totalPrice = cartBookIDs.reduce((price, bookId) => price + booksMap[bookId].price, 0)
+      document.querySelector(".cart__total").textContent = `Price: ${totalPrice}`
     })
     cartContainer.appendChild(cartBookNode)
   }
