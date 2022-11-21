@@ -82,7 +82,6 @@ function poehaliNahui(books) {
     <div class="card__bottom">
         <div class="card__bottom_right">
             <h4 class="card__price popup__price"></h4>
-            <button class="card__button">Add to cart</button>
         </div>
     </div>
 </div>
@@ -149,30 +148,6 @@ function poehaliNahui(books) {
     </div>
 </div>`;
   }
-
-  function createBookPopup({ title, imageLink, author, price, description }){
-    return`<div class="popup__card">
-                <div class="card__text">
-                    <div class="card__top">
-                        <h2 class="card__title">${title}</h2>
-                        <h3 class="card__author">by ${author}</h3>
-                        <div class="card__img__container">
-                            <img class="card__img" src="${imageLink}">
-                        </div>
-                    </div>
-                    <div class="card__bottom">
-                        <div class="card__bottom_right">
-                            <h4 class="card__price popup__price">Price: ${price}$</h4>
-                            <button class="card__button">Add to cart</button>
-                        </div>
-                    </div>
-                </div>
-                <div class="card__aside">
-                    <div class="popup__close card__button"><img class="close-icon" src="../../assets/icons/close_white.png"></div>
-                    <div class="card__description">${description}</div>
-                </div>
-            </div>`;
-  };
 
   const cartButton = document.querySelector(".nav__link_cart-icon");
   const cartElement = document.querySelector(".cart__menu");
