@@ -135,7 +135,7 @@ a{
 
 .nav__link_cart-icon:hover .cart__menu, .cart__menu.cart_open{
     display: block;
-    max-height:  800px;
+    max-height:  70vh;
     overflow: auto;
 }
 
@@ -321,8 +321,8 @@ main {
 }
 
 .card__img {
-    width: 100%;
-    height: auto;
+    width: auto;
+    height: 100%;
     align-self: center;
 }
 
