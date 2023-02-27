@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link href="../../assets/styles/normalize.css" rel="stylesheet" />
+    <link href="style.css" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="icon" href="../../assets/icons/logo_favicon.png" type="image/x-icon">
+    <title>Book shop</title>
+  </head>
+  <body>
+    <div class="popup__container">
+        <div class="popup__card">
+            <div class="card__text">
+                <div class="card__top">
+                    <h2 class="card__title">JavaScript: The Good Parts</h2>
+                    <h3 class="card__author">by Douglas Crockford</h3>
+                    <div class="card__img__container">
+                        <img class="card__img" src="../../assets/images/js_the_good_parts.jpg">
+                    </div>
+                </div>
+                <div class="card__bottom">
+                    <div class="card__bottom_right">
+                        <h4 class="card__price popup__price">Price: 30$</h4>
+                        <button class="card__button">Add to cart</button>
+                    </div>
+                </div>
+            </div>
+            <div class="card__aside">
+                <div class="popup__close card__button"><img class="close-icon" src="../../assets/icons/close_white.png"></div>
+                <div class="card__description">With JavaScript: The Good Parts, you'll discover a beautiful, elegant, lightweight and highly expressive language that lets you create effective code, whether you're managing object libraries or just trying to get Ajax to run fast. If you develop sites or applications for the Web, this book is an absolute must</div>
+            </div>
+        </div>
+    </div>
+    <!-- <header class="header_sticky">
+        <div class="header_sticky__container">
+            <a class="header__logo logo" href="#">
+                <div class="logo__img"></div>
+                <div class="logo__title"></div>
+            </a>
+            <nav class="header__nav nav">
+                <a class="nav__link current" href="#">Catalog</a>
+                <a class="nav__link" href="#">Categories</a>
+                <a class="nav__link" href="#">Special Offers</a>
+                <a class="nav__link" href="#">Delivery</a>
+                <a class="nav__link" href="#">Random Book</a>
+                <a class="nav__link nav__link_cart-icon" href="#">
+                    Cart
+                    <div class="cart-icon">
+                        <div class="cart__value">0</div>
+                    </div>
+                    <div class="cart__menu">
+                        <div class="cart__container">
+                            <div class="popup__close card__button"><img class="close-icon" src="../../assets/icons/close_white.png"></div>
+                            <h2 class="cart__title">Your cart:</h2>
+                            <div class="cart__card">
+                                <div class="card__text">
+                                    <div class="card__top">
+                                        <h3 class="card__title">JavaScript: The Good Parts</h3>
+                                        <h4 class="card__author">by Douglas Crockford</h4>
+
+                                    </div>
+                                    <h4 class="card__price cart__price">Price: 30$</h4>
+                                    <button class="card__button button_remove"><img class="button__icon" src="../../assets/icons/remove.svg"><p>Remove</p></button>
+                                </div>
+                                <div class="cart__img__container">
+                                    <img class="card__img" src="../../assets/images/js_the_good_parts.jpg">
+                                </div>
+                            </div>
+                            <h3 class="cart__total">Total price:</h3>
+                            <button class="card__button button_confirm">Confirm order</button>
+                        </div>
+                    </div>
+                </a>
+            </nav>
+        </div>
+    </header>
+    <main>
+    <div class="page__header">
+        <div class="page__header__container">
+            <h1 class="header__title">Catalog</h1>
+            <div class="header__switch-tabs">
+                <div class="switch-tab tab_active">
+                    <div class="all-icon"></div>
+                    All items</div>
+                <div class="switch-tab">
+                    <div class="sale-icon"></div>
+                    Sale</div>
+            </div>
+        </div>
+    </div>
+    <section class="catalog">
+        <div class="catalog__container">
+            <div class="catalog__card">
+                <div class="card__img__container">
+                    <img class="card__img" src="../../assets/images/js_the_good_parts.jpg">
+                </div>
+                <div class="card__text">
+                    <div class="card__top">
+                        <h2 class="card__title">JavaScript: The Good Parts</h2>
+                        <h3 class="card__author">by Douglas Crockford</h3>
+                    </div>
+                    <div class="card__bottom">
+                        <div class="card__extra">Show more +</div>
+                        <div class="card__bottom_right">
+                            <h4 class="card__price">Price: 30$</h4>
+                            <button class="card__button"><img class="button__icon" src="../../assets/icons/add_cart.svg"><p>Add to cart</p></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <div class="popup__container">
+        <div class="popup__card">
+            <div class="card__text">
+                <div class="card__top">
+                    <h2 class="card__title">JavaScript: The Good Parts</h2>
+                    <h3 class="card__author">by Douglas Crockford</h3>
+                    <div class="card__img__container">
+                        <img class="card__img" src="../../assets/images/js_the_good_parts.jpg">
+                    </div>
+                </div>
+                <div class="card__bottom">
+                    <div class="card__bottom_right">
+                        <h4 class="card__price popup__price">Price: 30$</h4>
+                        <button class="card__button">Add to cart</button>
+                    </div>
+                </div>
+            </div>
+            <div class="card__aside">
+                <div class="popup__close card__button"><img class="close-icon" src="../../assets/icons/close_white.png"></div>
+                <div class="card__description">With JavaScript: The Good Parts, you'll discover a beautiful, elegant, lightweight and highly expressive language that lets you create effective code, whether you're managing object libraries or just trying to get Ajax to run fast. If you develop sites or applications for the Web, this book is an absolute must</div>
+            </div>
+        </div>
+    </div>
+    </main>
+    <footer class="footer">
+        <div class="footer__container">
+            <nav class="footer__nav nav">
+                <a class="nav__link" href="#">Contact us</a>
+                <a class="nav__link" href="#">Categories</a>
+                <a class="nav__link" href="#">Special Offers</a>
+                <a class="nav__link" href="#">Delivery</a>
+                <a class="nav__link" href="#">How to order</a>
+                <a class="nav__link" href="#">FAQ</a>
+            </nav> 
+            <div class="footer__contacts">
+                <a class="footer__logo logo" href="#">
+                    <div class="logo__img"></div>
+                </a>
+                <div class="footer__socials">
+                    <a class="social__link"><img class="social__img" src="../../assets/icons/instagram.svg"/>Instagram</a>
+                    <a class="social__link"><img class="social__img" src="../../assets/icons/youtube.svg"/>YouTube</a>
+                    <a class="social__link"><img class="social__img" src="../../assets/icons/twitter.svg"/>Twitter</a>
+                    <a class="social__link"><img class="social__img" src="../../assets/icons/git_hub.svg"/>GitHub</a>
+                </div>
+            </div>
+            <div class="footer__coryright">
+                <div class="copyright">Copyright © 2022-2023</div>
+                <a class="developed" href="https://github.com/olyalass">Designed and Developed by Olya Lass</a>
+            </div>
+        </div>
+    </footer> -->
+    <script src="./script.js"></script>
+  </body>
+  </html>
